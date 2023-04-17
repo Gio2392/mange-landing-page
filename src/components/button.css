@@ -1,0 +1,24 @@
+.btn {
+    border-radius: 4rem;
+    font-size: var(--fs-s);
+    font-weight: var(--fw-bold);
+    padding: 1.5rem 3rem;
+    transition: all .3s ease;
+}
+.btn:hover{
+    opacity: .8;
+}
+
+.btn.orange {
+    background: var(--BrightRed);
+    color: var(--white);
+}
+.btn__shadow{
+    box-shadow: 0rem 1rem 1.5rem 0px var(--BrightRedHover);
+}
+
+.btn.white {
+    background: var(--VaryLightGray);
+    color: var(--BrightRed);
+    box-shadow: 0rem 1rem 1.5rem 0px var(--DarkBlueHover);
+}

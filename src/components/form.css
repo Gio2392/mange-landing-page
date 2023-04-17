@@ -1,0 +1,35 @@
+/* ===================================== */
+/* =============== FORM  =============== */
+/* ===================================== */
+.form{
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+.form__input{
+    border-radius: 5rem;
+    width: 100%;
+    padding: 0 2rem;
+    border: 0;
+    outline: none;
+}
+
+form .error__text{
+    position: absolute;
+    left: 2rem;
+    bottom: -1rem;
+    color: var(--BrightRed);
+    font-style: italic
+}
+
+.swal2-container .swal2-popup{
+    font-size: var(--fs-regular);
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    background-color: var(--BrightRed);
+    color: #fff;
+}

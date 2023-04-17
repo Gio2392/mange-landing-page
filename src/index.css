@@ -1,0 +1,148 @@
+:root{
+
+/* Color Primary */
+
+--BrightRed: hsl(12, 88%, 59%);
+--BrightRedHover: hsla(12, 88%, 59%, 0.35);
+--DarkBlue: hsl(228, 39%, 23%);
+--DarkBlueHover: hsla(228, 39%, 23%, 0.2);
+
+/* Color Neutral */
+
+--DarkGrayishBlue: hsl(227, 12%, 61%);
+--VeryDarkBlue: hsl(233, 12%, 13%);
+--VeryPaleRed: hsl(13, 100%, 96%);
+--VaryLightGray: hsl(0, 0%, 98%);
+--BrightRedLight: hsl(13, 100%, 96%);
+
+--white: #ffffff;
+--black: #000000;
+
+/* Fonts */
+
+--font: 'Be Vietnam Pro', sans-serif;
+--fw-light: 400;
+--fw-regular: 500;
+--fw-bold: 700;
+
+--fs-xs: 1rem; 
+--fs-s: 1.3rem;
+--fs-m: 1.4rem;
+--fs-regular: 1.6rem;
+--fs-l: 4rem;
+--fs-xl: clamp(3rem, calc(2.5rem + 1.36vw), 4rem);
+--fs-xxl: clamp(4rem, calc(3.2rem + 2.04vw), 5.5rem);
+
+/* size */
+--nav-size: 10rem;
+
+
+}
+@media (min-width: 768px) {
+  :root{
+         
+    /* size */
+    --nav-size: 16rem;
+
+    /* Font */
+    --fs-m: 1.6rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+} 
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+h1, h2, h3, p{
+  margin: 0;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--VeryDarkBlue);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+blockquote{
+  margin: 0;
+  padding: 0;
+}
+input{
+  font-size: var(--fs-s);
+  color: var(--BrightRed);
+}
+input:focus{
+  border: 1px solid var(--BrightRed);
+}
+input::placeholder{
+  font-size: var(--fs-s);
+  color: var(--DarkGrayishBlue);
+}
+/* Global */
+.container{
+  max-width: 111.2rem;
+  width: calc(100vw - 3rem);
+  margin: 0 auto;
+}
+.title{  
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xl);
+}
+.subtitle{
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-regular);
+  letter-spacing: -0.02em;
+}
+.hero__title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xxl);
+  letter-spacing: -0.03em;
+}
+.banner__title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-l);
+}
+.text{
+  font-size: var(--fs-regular);
+  color: var(--DarkGrayishBlue);
+  line-height: 1.5;
+}
+.text__s{
+  font-size: var(--fs-m);
+  color: var(--DarkGrayishBlue);
+  line-height: 1.5;
+}
+.center{ 
+  text-align: center;
+}
+.copy__text{
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-s);
+}
+.error__text,
+.input__text{
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-xs);
+}

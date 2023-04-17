@@ -1,0 +1,129 @@
+/* ===================================== */
+/* ============== FOOTER  ============== */
+/* ===================================== */
+footer{
+    background: var(--VeryDarkBlue);
+}
+.footer{
+    display: grid;
+    gap: 4rem;
+    padding: 5rem 0 2.5rem;
+}
+.footer__menu{
+    justify-self: center;
+}
+.footer__menu ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.footer__menu a{
+    color: var(--DarkGrayishBlue);
+    transition: color .3s ease;
+}
+.footer__menu a:hover{
+    color: var(--BrightRed);
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.footer__social a{
+    transition: all .3s ease;
+}
+.footer__social a:hover{
+    opacity: .8;
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__copy{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .footer{
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "form form"
+            "logo menu"
+            "social menu"
+            "copy copy";
+    }
+    
+    .form{
+        grid-area: form;
+    }
+    .footer__logo {
+        grid-area: logo;
+        justify-self: start;
+    }
+    .footer__menu ul {
+        padding: 0;
+    }
+    .footer__menu {
+        grid-area: menu;
+        align-self: center;
+        justify-self: unset;
+        padding: 0;
+    }
+    .footer__social{
+        grid-area: social;
+        justify-self: start;
+    }
+    .footer__copy {
+        grid-area: copy;
+        justify-self: center;
+        padding: 2rem 0;
+    }
+}
+@media (min-width: 1024px) {
+    .footer{
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-areas: 
+            "logo menu form"
+            "social menu copy";
+    }
+        .form {
+            grid-area: form;
+        }
+    
+        .footer__logo {
+            grid-area: logo;
+            justify-self: start;
+            align-self: start;
+        }
+    
+        .footer__menu ul {
+            padding: 0;
+            
+        }
+    
+        .footer__menu {
+            grid-area: menu;
+            align-self: center;
+            padding: 0;
+        }
+    
+        .footer__social {
+            grid-area: social;
+            justify-self: start;
+            align-self: end;
+        }
+    
+        .footer__copy {
+            color: var(--DarkGrayishBlue);
+            grid-area: copy;
+            justify-self: end;
+            align-self: end;
+            padding: 0;
+        }
+}

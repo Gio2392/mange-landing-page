@@ -1,0 +1,101 @@
+/* ===================================== */
+/* ============== PROFITS  ============= */
+/* ===================================== */
+
+.profits{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 7rem;
+}
+.profits__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profits__info .title{
+    align-self: center;
+    max-width: 25rem;
+}
+.profits__info .text__s{
+    align-self: center;
+    max-width: 30rem;
+}
+.profits__items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profit__item{
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-columns: min-content 1fr;
+}
+
+.profit__item-order{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background: var(--BrightRed);
+    border-radius: 2rem;
+    width: 6.5rem;
+    height: 4rem;
+    z-index: 2;
+}
+.profit__item-title{
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 0 -1.5rem 0 3rem;
+    padding-left: 5rem;
+    background: var(--BrightRedLight);
+
+    display: flex;
+    align-items: center;
+}
+.profit__item-text{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+@media (min-width: 768px) {
+    .profits{
+        flex-direction: row;
+        gap: 4rem;
+        padding-bottom: 7rem;
+    }
+    .profits > div {
+        width: 50%;
+    }
+    .profits__items{
+        gap: 4rem;
+    }
+    .profit__item{
+        display: grid;
+        column-gap: 3rem;
+        grid-template-columns: min-content 1fr;
+    }   
+    .profits__info .title{
+        align-self: center;
+        max-width: 100%;
+        text-align: left;
+    }
+    .profits__info .text__s{
+        align-self: start;
+        max-width: 35rem;
+        text-align: left;
+    }
+    .profit__item-title{
+        grid-area: 1 / 2 / 2 / 3;
+        margin: 0;
+        padding-left: 0rem;
+        background: unset;
+
+        display: flex;
+        align-items: center;
+    }
+    .profit__item-text{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    
+}

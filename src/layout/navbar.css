@@ -1,0 +1,97 @@
+/* ===================================== */
+/* ============== NAVBAR  ============== */
+/* ===================================== */
+
+.navbar{
+    height: var(--nav-size);
+    position: fixed;
+    width: 100vw;
+    transition: all .3s ease-in-out;
+    z-index: 100;
+}
+.navbar-active{
+    background: var(--white);
+}
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav button{
+    display: none;
+}
+.nav__links{
+    background: var(--white);
+    box-shadow: 0rem 1rem 3.5rem 0px var(--DarkBlueHover);
+    border-radius: 1rem;
+    display: block;
+    opacity: 0;
+    padding: 2rem;
+    position: absolute;
+    right: -100vw;
+    text-align: center;
+    top: var(--nav-size);
+    transition: all .3s ease-in-out;
+    margin: 0 auto;
+    width: 90%;
+    visibility: hidden;
+}
+.nav__links-active{
+    left: 0;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__collapse-item{
+    padding: 1rem 0;
+    font-weight: var(--fw-bold);
+}
+.nav__collapse-item a{
+    color: var(--DarkBlue);
+    transition: opacity .3s ease;
+}
+.nav__collapse-item a:hover{
+    opacity: .5;
+}
+.nav__logo{
+    padding-top: .5rem;
+}
+.nav__toggle button {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .nav .nav__toggle{
+        display: none;
+    }
+    .nav__links{
+        background: unset;
+        box-shadow: unset;
+        border-radius: 0;
+        display: block;
+        opacity: 1;
+        padding: 2rem;
+        position: relative;
+        right: 0;
+        text-align: unset;
+        top: 0;
+        transition: all .3s ease-in-out;
+        visibility: visible;
+
+        margin: 0;
+        width: auto;
+    }
+    .nav__collapse ul{
+        display: flex;
+        gap: 1rem;
+    }
+    .nav button{
+        display: block;
+    }
+    .nav__collapse-item a{
+        font-weight: var(--fw-regular);
+    }
+}

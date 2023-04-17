@@ -1,0 +1,39 @@
+/* ===================================== */
+/* ============== SWIPER  ============== */
+/* ===================================== */
+
+.swiper-wrapper{
+    box-sizing: inherit;
+}
+
+.wrapper__item {
+    width: 100%;
+    background: var(--VaryLightGray);
+    padding: 6rem 3.5rem 4rem;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.wrapper__item p{
+    padding-bottom: 2.5rem;
+}
+
+.wrapper__image {
+    position: absolute;
+    width: 7.2rem;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.swiper-pagination-bullet{
+    background: var(--white);
+    border: 1px solid var(--BrightRed);
+    width: .9rem;
+    height: .9rem;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: var(--BrightRed);
+
+}
