@@ -62,7 +62,7 @@
 
     top: -10rem;
     right: -10rem;
-    background: url('./images/bg-tablet-pattern.svg') no-repeat 100% 0%;
+    background: url('../images/bg-tablet-pattern.svg') no-repeat 100% 0%;
     background-size: contain;
 }
 .bg__pattern-2{
@@ -72,7 +72,7 @@
 
     bottom: -20rem;
     right: -17rem;
-    background: url('./images/bg-tablet-pattern.svg') no-repeat 100% 30%;
+    background: url('../images/bg-tablet-pattern.svg') no-repeat 100% 30%;
     background-size: contain;
 }
 @media (min-width: 768px) {
